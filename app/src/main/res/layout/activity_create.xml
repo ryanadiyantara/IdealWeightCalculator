@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/BG"
+    tools:context=".Create">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/C3"
+                android:text="Menghitung Berat Badan Ideal"
+                android:textAlignment="center"
+                android:textSize="12pt"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="136dp"
+                android:layout_height="145dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/timbangan" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/C3"
+                android:layout_marginTop="15dp"
+                android:text="Nama"
+                android:textSize="10pt" />
+            <EditText
+                android:id="@+id/create_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:backgroundTint="@color/C3"
+                android:textColor="@color/C3"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/C3"
+                android:layout_marginTop="15dp"
+                android:text="Berat Badan (kg)"
+                android:textSize="10pt" />
+            <EditText
+                android:id="@+id/create_bb"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:backgroundTint="@color/C3"
+                android:inputType="number"
+                android:textColor="@color/C3"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/C3"
+                android:layout_marginTop="15dp"
+                android:text="Tinggi Badan (cm)"
+                android:textSize="10pt" />
+            <EditText
+                android:id="@+id/create_tinggi"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:textColor="@color/C3"
+                android:backgroundTint="@color/C3"
+                android:inputType="number"/>
+            <Button
+                android:id="@+id/btnhitungimt"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Hitung IMT"
+                android:onClick="hitung"
+                android:backgroundTint="@color/C2"/>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Besar Indeks Massa Tubuh (IMT)"
+                android:textSize="10pt"
+                android:textColor="@color/C3" />
+            <TextView
+                android:id="@+id/create_imt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/C3"
+                android:textSize="10pt"
+                android:inputType="number"
+                android:textColor="@color/C3"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Keterangan"
+                android:textSize="10pt"
+                android:textColor="@color/C3" />
+            <TextView
+                android:id="@+id/create_ket"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/C3"
+                android:textSize="10pt"
+                android:inputType="text"
+                android:textColor="@color/C3"
+                android:text="" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/create_btncancel"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="CANCEL"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/C1"/>
+                <Button
+                    android:id="@+id/create_btnsimpan"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="SIMPAN"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/C2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
